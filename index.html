@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Simulator</title>
+</head>
+<style>
+    /* Modal Styles */
+    body {
+        background-image: url("https://img.freepik.com/premium-photo/asphalt-racing-track-illuminated-race-sport-stadium-evening-arena-spotlight-ai-generate_45996-3016.jpg?w=360");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+        background-color: #fff;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%;
+        text-align: center;
+    }
+
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 50px;
+        cursor: pointer;
+    }
+
+    #car {
+        background-image: url("https://i.pinimg.com/originals/47/cf/80/47cf807182810874b7465a0821c19a0e.gif");
+        width: 500px;
+        height: 280px;
+        background-repeat: no-repeat;
+        border: none;
+        background-color: none;
+        border-radius: 30px;
+        margin: 300px 40px 40px 100px;
+    }
+
+    #carwash {
+        background-image: url("https://static.wixstatic.com/media/7198b8_b941b1633ebf40e3b01fde6d45e7eb20~mv2.gif");
+        width: 500px;
+        height: 280px;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 30px;
+    }
+
+    p {
+        color: #fff;
+    }
+</style>
+
+<body>
+    <center>
+        <p>Click the image to see the Driver's info and Carwash Assistant's Info</p>
+    </center>
+
+    <button id="car" onclick="Richard.driveMyCar()"></button>
+    <button id="carwash" onclick="Eli.carWash()"></button>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <p id="modalText"></p>
+        </div>
+    </div>
+    <script src="drive.js"></script>
+</body>
+
+</html>
