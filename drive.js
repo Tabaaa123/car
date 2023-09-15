@@ -26,10 +26,10 @@ function Driver(name, age, workExperience) {
     this.age = age;
     this.workExperience = workExperience;
     this.driveMyCar = function () {
-        openModal(this.name  + " is driving the car" + " " + this.age + " years old " + " and " + this.workExperience + " Years Sports Racer" );
+        openModal(this.name  + " is driving the car, " + this.age + " years old, " + this.workExperience + " years experience in racing.");
     };
     this.carWash = function () {
-        openModal(this.name + " is washing the car");
+        openModal(this.name  + " is washing the car, " + this.age + " years old, " + this.workExperience + " years experience in Linis Kotse Co.");
     };
 }
 

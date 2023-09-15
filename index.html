@@ -9,9 +9,10 @@
 <style>
     /* Modal Styles */
     body {
-        background-image: url("https://img.freepik.com/premium-photo/asphalt-racing-track-illuminated-race-sport-stadium-evening-arena-spotlight-ai-generate_45996-3016.jpg?w=360");
+        background-image: url("https://img.myloview.com/posters/old-vintage-background-paper-texture-grunge-vintage-retro-blank-rough-stains-streaks-brown-beige-400-174519237.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        margin: 30px 0 0 500px;
     }
 
     .modal {
@@ -20,18 +21,19 @@
         z-index: 1;
         left: 0;
         top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        width: 70%;
+        height: 70%;
+        border-radius: 30px;
     }
 
     .modal-content {
-        background-color: #fff;
+        background-color: #ffffff87;
         margin: 15% auto;
         padding: 20px;
         border: 1px solid #888;
         width: 50%;
         text-align: center;
+        border-radius: 30px;
     }
 
     .close {
@@ -42,38 +44,36 @@
         cursor: pointer;
     }
 
-    #car {
-        background-image: url("https://i.pinimg.com/originals/47/cf/80/47cf807182810874b7465a0821c19a0e.gif");
+    img {
         width: 500px;
-        height: 280px;
+        height: 300px;
+        border-radius: 30px;
+    }
+
+    #car {
+        width: 150px;
+        height: 50px;
         background-repeat: no-repeat;
         border: none;
         background-color: none;
-        border-radius: 30px;
-        margin: 300px 40px 40px 100px;
+        border-radius: 10px;
+        margin: 0 30px 0 50px;
     }
 
     #carwash {
-        background-image: url("https://static.wixstatic.com/media/7198b8_b941b1633ebf40e3b01fde6d45e7eb20~mv2.gif");
-        width: 500px;
-        height: 280px;
+        width: 150px;
+        height: 50px;
         background-repeat: no-repeat;
         border: none;
-        border-radius: 30px;
-    }
-
-    p {
-        color: #fff;
+        border-radius: 10px;
     }
 </style>
 
-<body>
-    <center>
-        <p>Click the image to see the Driver's info and Carwash Assistant's Info</p>
-    </center>
-
-    <button id="car" onclick="Richard.driveMyCar()"></button>
-    <button id="carwash" onclick="Eli.carWash()"></button>
+<body> 
+    <img src="https://i.pinimg.com/originals/47/cf/80/47cf807182810874b7465a0821c19a0e.gif" alt="car">
+    <br>
+    <button id="car" onclick="Richard.driveMyCar()">Driver Info</button>
+    <button id="carwash" onclick="Eli.carWash()">Carwash Staff Info</button>
     <!-- Modal -->
     <div id="myModal" class="modal">
         <div class="modal-content">
@@ -83,5 +83,4 @@
     </div>
     <script src="drive.js"></script>
 </body>
-
 </html>
